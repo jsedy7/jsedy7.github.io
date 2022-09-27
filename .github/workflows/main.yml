@@ -12,4 +12,5 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force --clean --verbose
+      - name: Publish docs
+        run: mkdocs gh-deploy
