@@ -1,2 +1,0 @@
-# jsedy.com
-jsedy.com
