@@ -1,0 +1,150 @@
+baseURL: https://jsedy.com/
+languageCode: cs
+title: jsedy.com
+theme: PaperMod
+
+defaultContentLanguage: cs
+defaultContentLanguageInSubdir: true
+
+enableRobotsTXT: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: jsedy.com
+  keywords: [Portfolio, FPV]
+  author: jiri.sedy
+  DateFormat: "January 2, 2006"
+  defaultTheme: light
+
+  displayFullLangName: true
+
+  ShowReadingTime: false
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  disableThemeToggle: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/jsedy7"
+    - name: youtube
+      url: "https://www.youtube.com/@jsedy7"
+    - name: instagram
+      url: "https://www.instagram.com/jsedy.fpv/"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/jsedy7/"
+    - name: email
+      url: "mailto:me@jsedy.com"
+
+mainSections: []
+
+outputs:
+  home: [HTML, RSS, JSON]
+
+languages:
+  cs:
+    languageName: "🇨🇿 Česky"
+    languageCode: cs
+    weight: 1
+    contentDir: content/cs
+    params:
+      profileMode:
+        enabled: true
+        title: "Jiří Šedý"
+        subtitle: "FPV Pilot | Monitoring Engineer | CrossFit Trainer L1"
+        imageUrl: "/images/jsedy.jpeg"
+        imageTitle: "Jiří Šedý"
+        imageWidth: 180
+        imageHeight: 180
+        buttons:
+          - name: FPV Pilot
+          - name: Prometheus
+          - name: Monitoring
+          - name: Incident management
+          - name: Grafana
+          - name: Linux
+          - name: CI/CD
+
+    menu:
+      main:
+        - name: Domů
+          identifier: home-cs
+          pageRef: /
+          weight: 1
+        - name: FPV
+          identifier: fpv-cs
+          pageRef: /fpv/
+          weight: 2
+        - name: Ceník
+          identifier: pricing-cs
+          pageRef: /pricing/
+          weight: 3
+        - name: O mně
+          identifier: about-cs
+          pageRef: /about/
+          weight: 4
+        - name: Blog
+          identifier: medium-cs
+          url: https://medium.com/@jsedy7
+          weight: 5
+
+  en:
+    languageName: "🇺🇸 English"
+    weight: 2
+    contentDir: content/en
+    params:
+      profileMode:
+        enabled: true
+        title: "Jiří Šedý"
+        subtitle: "FPV Pilot | Monitoring Engineer | CrossFit Trainer L1"
+        imageUrl: "/images/jsedy.jpeg"
+        imageTitle: "Jiří Šedý"
+        imageWidth: 180
+        imageHeight: 180
+        buttons:
+          - name: FPV Pilot
+          - name: Prometheus
+          - name: Monitoring
+          - name: Incident management
+          - name: Grafana
+          - name: Linux
+          - name: CI/CD
+
+    menu:
+      main:
+        - name: Home
+          identifier: home-en
+          pageRef: /
+          weight: 1
+        - name: FPV
+          identifier: fpv-en
+          pageRef: /fpv/
+          weight: 2
+        - name: Pricing
+          identifier: pricing-en
+          pageRef: /pricing/
+          weight: 3
+        - name: About me
+          identifier: about-en
+          pageRef: /about/
+          weight: 4
+        - name: Blog
+          identifier: medium-en
+          url: https://medium.com/@jsedy7
+          weight: 5
