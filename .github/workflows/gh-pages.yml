@@ -52,7 +52,7 @@ jobs:
           echo "Using baseURL: $BASE_URL"
           hugo --minify --baseURL "$BASE_URL"
           # Disable Jekyll
-          touch public/.nojekyll
+          touch "$(pwd)/public/.nojekyll"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
