@@ -41,5 +41,5 @@ Every push to the `main` branch triggers:
 4. **Deployment to GitHub Pages**
 
 ## 📄 License
-This project is released under the MIT License
+This project is released under the [MIT License](LICENSE)
 Feel free to use it as a reference for your own Hugo + PaperMod setup
