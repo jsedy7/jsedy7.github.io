@@ -73,7 +73,7 @@ languages:
         imageWidth: 180
         imageHeight: 180
         buttons:
-          - name: FPV Pilot
+          - name: FPV
           - name: Prometheus
           - name: Monitoring
           - name: Incident management
@@ -118,7 +118,7 @@ languages:
         imageWidth: 180
         imageHeight: 180
         buttons:
-          - name: FPV Pilot
+          - name: FPV
           - name: Prometheus
           - name: Monitoring
           - name: Incident management
