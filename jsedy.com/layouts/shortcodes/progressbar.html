@@ -1,0 +1,45 @@
+{{- if not (.Page.Scratch.Get "xinex_progress_css") -}}
+<style>
+  .xinex-progress-wrap { margin: 1.1rem 0; }
+  .xinex-progress-head { display: flex; justify-content: space-between; gap: 0.8rem; align-items: baseline; }
+  .xinex-progress-label { font-weight: 650; font-size: 1rem; }
+  .xinex-progress-value { color: var(--secondary); font-size: 0.95rem; white-space: nowrap; }
+  .xinex-progress-track {
+    margin-top: 0.45rem;
+    width: 100%;
+    height: 13px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--theme) 88%, #3b82f6 12%);
+    overflow: hidden;
+  }
+  .xinex-progress-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
+    transition: width 240ms ease;
+  }
+  .xinex-progress-note {
+    margin-top: 0.35rem;
+    font-size: 0.9rem;
+    color: var(--secondary);
+  }
+  .xinex-progress-note strong { color: var(--primary); }
+</style>
+{{- .Page.Scratch.Set "xinex_progress_css" true -}}
+{{- end -}}
+
+{{- $value := .Get "value" | default "0" -}}
+{{- $label := .Get "label" | default "Progress" -}}
+{{- $note := .Get "note" | default "" -}}
+<div class="xinex-progress-wrap">
+  <div class="xinex-progress-head">
+    <span class="xinex-progress-label">{{ $label }}</span>
+    <span class="xinex-progress-value">{{ $value }}%</span>
+  </div>
+  <div class="xinex-progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ $value }}" aria-label="{{ $label }}">
+    <div class="xinex-progress-fill" style="width: {{ $value }}%;"></div>
+  </div>
+  {{- if $note }}
+  <div class="xinex-progress-note">{{ $note | safeHTML }}</div>
+  {{- end }}
+</div>

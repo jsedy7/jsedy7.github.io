@@ -91,18 +91,22 @@ languages:
           identifier: fpv-cs
           pageRef: /fpv/
           weight: 2
+        - name: Projekty
+          identifier: projects-cs
+          pageRef: /projekty/
+          weight: 3
         - name: Ceník
           identifier: pricing-cs
           pageRef: /pricing/
-          weight: 3
+          weight: 4
         - name: O mně
           identifier: about-cs
           pageRef: /about/
-          weight: 4
+          weight: 5
         - name: Blog
           identifier: medium-cs
           url: https://medium.com/@jsedy7
-          weight: 5
+          weight: 6
 
   en:
     languageName: "🇺🇸 English"
@@ -136,15 +140,19 @@ languages:
           identifier: fpv-en
           pageRef: /fpv/
           weight: 2
+        - name: Projects
+          identifier: projects-en
+          pageRef: /projects/
+          weight: 3
         - name: Pricing
           identifier: pricing-en
           pageRef: /pricing/
-          weight: 3
+          weight: 4
         - name: About me
           identifier: about-en
           pageRef: /about/
-          weight: 4
+          weight: 5
         - name: Blog
           identifier: medium-en
           url: https://medium.com/@jsedy7
-          weight: 5
+          weight: 6
