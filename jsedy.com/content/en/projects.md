@@ -4,14 +4,14 @@ title: "Projects"
 
 ## XINEX progress
 
-_Last update: 2026-03-18 17:44 CET_
+_Last update: 2026-03-18 18:15 CET_
 
-{{< progressbar label="Project readiness" value="72" note="Main product shape is live locally. <strong>Next:</strong> Admin Product Web Management." >}}
+{{< progressbar label="Project readiness" value="73" note="Main product shape is live locally. <strong>Next:</strong> Admin Product Web Management." >}}
 
-{{< progressbar label="User readiness" value="68" note="Core monitoring UX exists, onboarding polish remains." >}}
-{{< progressbar label="Administration" value="63" note="System console + roadmap done, deeper control panels pending." >}}
+{{< progressbar label="User readiness" value="69" note="Core monitoring UX exists, onboarding polish remains." >}}
+{{< progressbar label="Administration" value="64" note="System console + roadmap done, deeper control panels pending." >}}
 {{< progressbar label="Product web" value="51" note="Pricing + docs are online, full admin editing of limits still missing." >}}
-{{< progressbar label="Security" value="45" note="Auth baseline done, advanced hardening/2FA/audit depth in roadmap." >}}
+{{< progressbar label="Security" value="47" note="Auth baseline done, advanced hardening/2FA/audit depth in roadmap." >}}
 {{< progressbar label="Automation & delivery" value="45" note="Local workflows stable, cloud deployment automation still in progress." >}}
 
 ### Next milestone
