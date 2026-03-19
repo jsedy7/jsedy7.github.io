@@ -4,18 +4,18 @@ title: "Projects"
 
 ## XINEX progress
 
-_Last update: 2026-03-19 CET_
+_Last update: 2026-03-22 CET_
 
-{{< progressbar label="Project readiness" value="85" note="Complete flat-surface UI refresh (v0.44) — visual language unified with loading screen DNA. Critical login and session cookie bugs fixed. Batch planning system created. <strong>Next:</strong> Security batches (SSRF, TLS, deployment hardening)." >}}
+{{< progressbar label="Project readiness" value="88" note="v0.46.0-alpha — SSRF protection in API, probe-local, and probe-lambda. ReDoS timeout wrapper for body-regex. Startup secret validation refuses insecure defaults. HTTP security headers (Next.js + nginx). Terraform SSH CIDR restriction, IMDSv2 enforcement, SES IAM scoped to identity. Migration script applies all SQL files in sorted order. Onboarding empty-state with single-URL wizard." >}}
 
-{{< progressbar label="User readiness" value="77" note="Login now works reliably (datetime serialization fix + Secure cookie flag fix). UI significantly cleaned up: flat surfaces, compact monitor rows, status-first inventory, outage banner, collapsible incidents." >}}
+{{< progressbar label="User readiness" value="81" note="Onboarding wizard for new users (empty state → URL → start monitoring in 30s). Monitor detail shell with trial badge, sign out, and extended nav. Organisation name required at registration." >}}
 {{< progressbar label="Administration" value="76" note="System Console covers provider-event simulation, webhook-backed billing ingestion, and richer Product Web locale editing." >}}
 {{< progressbar label="Product web" value="59" note="Product Web now supports hero/highlights copy editing and pricing card add/remove/reorder in admin." >}}
-{{< progressbar label="Security" value="53" note="Session cookie flags fixed (Secure, HttpOnly, SameSite). Webhook signature verification added; SSRF, ReDoS and TLS hardening are next (batches 01-03)." >}}
-{{< progressbar label="Automation & delivery" value="46" note="Local workflows stable; cloud deployment automation remains in progress." >}}
+{{< progressbar label="Security" value="71" note="SSRF blocking of private/reserved IPs in API and both probes. ReDoS protection via thread with 2s timeout. Startup secret validation. HTTP security headers (CSP, Permissions-Policy). Terraform SSH CIDR, IMDSv2, SES IAM scoped." >}}
+{{< progressbar label="Automation & delivery" value="52" note="Migration deployment fixed (all *.sql files applied in sorted order). Local workflows stable; cloud deployment in progress." >}}
 
 ### Next milestone
 
-- Security batch 01: SSRF + ReDoS fixes
-- Security batch 02: TLS, SSH, secrets hardening
-- Security batch 03: Deployment fixes + security headers
+- Batch 04: AWS deploy (cloud automation)
+- Batch 05: Onboarding wizard expansion
+- Batch 13: Registration + onboarding flow completion
