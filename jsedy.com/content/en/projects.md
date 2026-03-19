@@ -4,27 +4,29 @@ title: "Projects"
 
 ## XINEX progress
 
-_Last update: 2026-03-19 14:20 CET_
+_Last update: 2026-03-19 14:31 CET_
 
-{{< progressbar label="Project readiness" value="97" note="v0.47.0-alpha — batches 01-36, 40 of 42 completed. This sprint: integrations feature gate (34), site statistics (40), account suspension + impersonation (31). Migrations 022-024." >}}
+{{< progressbar label="Project readiness" value="99" note="v0.49.0-alpha — sprint 42+33+18+25+20+22 completed. Rate limiting (nginx + app layer), IP blocklist, probers management, dead probe detection, SEO meta tags + sitemap, account delete, API pagination + X-Request-ID. Migrations 025-027." >}}
 
-{{< progressbar label="User readiness" value="90" note="Email + Telegram alerts, onboarding wizard, first-run hint. Login page redesign with show/hide password. Heartbeats progress bar. Quick wizard simplified. Impersonation banner when in impersonation mode." >}}
-{{< progressbar label="Administration" value="90" note="Integrations feature gate: enable/disable per-integration from System Console (SQL registry + admin UI). Site statistics: KPI cards, check volume, monitor type breakdown. Account suspension + impersonation (audited, max 3 sessions, cannot impersonate admin)." >}}
-{{< progressbar label="Product web" value="78" note="Hero, highlights, quickstart docs, production legal texts. Full redesign planned in batch 37." >}}
-{{< progressbar label="Security" value="84" note="SSRF, ReDoS, HTTP headers. Per-email lockout. Account suspension (403 on login + API). Impersonation: audited, visible banner, max 3 concurrent sessions, cannot impersonate platform admins." >}}
+{{< progressbar label="User readiness" value="93" note="Account delete (Danger Zone + double confirmation). Probe stale warning in dashboard. Consistent error format with request_id. Pagination on monitor list API." >}}
+{{< progressbar label="Administration" value="95" note="Probers section: health status badges, 30s auto-refresh, deregister action. IP Blocklist section: CRUD + audit events. Probe heartbeat endpoint (POST /internal/probe-heartbeat)." >}}
+{{< progressbar label="Product web" value="84" note="OG/Twitter meta tags, sitemap.xml, robots.txt, placeholder OG image 1200x630." >}}
+{{< progressbar label="Security" value="93" note="nginx rate limit zones (auth 10r/m, api 60r/s, DDoS timeouts, limit_conn 20). IP blocklist middleware (in-memory cache 2min refresh). X-Request-ID on all responses. Consistent error format with request_id field." >}}
 {{< progressbar label="Automation & delivery" value="57" note="QA checklist, integration docs. pytest unit tests and CI pipeline planned in batch 24." >}}
 
 ---
 
 ### Next milestone
 
-**Sprint completed (34, 40, 31):**
-- Batch 34 - Integrations feature gate (enable/disable from System Console)
-- Batch 40 - Site Statistics (KPI cards, checks volume, monitor distribution)
-- Batch 31 - Account management: suspension + impersonation (audited, banner in UI)
+**Sprint completed (42, 33, 18, 25, 20, 22):**
+- Batch 42 - Defensive mechanisms: nginx rate limiting, IP blocklist, DDoS protection
+- Batch 33 - Probers management in System Console (health, auto-refresh, deregister)
+- Batch 18 - Dead probe detection: heartbeat endpoint + stale warning in UI
+- Batch 25 - Account delete (self-service, soft-delete with confirmation)
+- Batch 20 - Marketing SEO: OG tags, sitemap, robots.txt
+- Batch 22 - API quality: X-Request-ID, consistent errors, pagination
 
 **Queued:**
-- Batch 33 - Probers management in System Console
-- Batch 32 - Ping probe architecture
+- Batch 32 - Ping probe architecture (multi-type)
 - Batch 37 - Product web major redesign
-- Batch 42 - Defensive mechanisms (IP blocklist, abuse detection)
+- Batch 41 - Admin: roles granularity / platform moderator
