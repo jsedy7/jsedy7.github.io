@@ -4,18 +4,16 @@ title: "Projects"
 
 ## XINEX progress
 
-_Last update: 2026-03-22 CET_
+_Last update: 2026-03-19 CET_
 
-{{< progressbar label="Project readiness" value="88" note="v0.46.0-alpha — SSRF protection in API, probe-local, and probe-lambda. ReDoS timeout wrapper for body-regex. Startup secret validation refuses insecure defaults. HTTP security headers (Next.js + nginx). Terraform SSH CIDR restriction, IMDSv2 enforcement, SES IAM scoped to identity. Migration script applies all SQL files in sorted order. Onboarding empty-state with single-URL wizard." >}}
+{{< progressbar label="Project readiness" value="93" note="v0.47.0-alpha — Per-tenant email alerts with 15-min cooldown. Phone E.164 + notify_email_enabled in profile. Subscription usage card in Settings. Analytics usage-summary panel. First-run hint after first monitor. Dashboard all-UP green hero block. Monitor list status-first layout. Product web admin Copy EN→CS button. Quickstart docs + production-quality legal skeleton. Integration docs (Telegram, Slack, Webhook, SES, PagerDuty roadmap). QA checklist script (43 items). Migration 020." >}}
 
-{{< progressbar label="User readiness" value="81" note="Onboarding wizard for new users (empty state → URL → start monitoring in 30s). Monitor detail shell with trial badge, sign out, and extended nav. Organisation name required at registration." >}}
-{{< progressbar label="Administration" value="76" note="System Console covers provider-event simulation, webhook-backed billing ingestion, and richer Product Web locale editing." >}}
-{{< progressbar label="Product web" value="59" note="Product Web now supports hero/highlights copy editing and pricing card add/remove/reorder in admin." >}}
-{{< progressbar label="Security" value="71" note="SSRF blocking of private/reserved IPs in API and both probes. ReDoS protection via thread with 2s timeout. Startup secret validation. HTTP security headers (CSP, Permissions-Policy). Terraform SSH CIDR, IMDSv2, SES IAM scoped." >}}
-{{< progressbar label="Automation & delivery" value="52" note="Migration deployment fixed (all *.sql files applied in sorted order). Local workflows stable; cloud deployment in progress." >}}
+{{< progressbar label="User readiness" value="87" note="Email alerts on monitor state change with cooldown. Phone field + email/SMS/voice notification toggles in Settings. First-run hint. Dashboard: green hero when all UP, red banner when DOWN. Monitor list status-first layout with highlighted bulk actions." >}}
+{{< progressbar label="Administration" value="82" note="Product web admin: section visibility at top, Copy EN→CS button. Analytics usage summary panel with plan/monitors/checks progress bars." >}}
+{{< progressbar label="Product web" value="78" note="Hero: 'Know before your users do.' New highlights (6 value-focused items), quickstart docs (4 sections), production legal (ToS, Privacy/GDPR, Cookie Policy) in EN + CS." >}}
+{{< progressbar label="Security" value="74" note="SSRF, ReDoS, startup secret validation, HTTP headers, Terraform hardening from v0.46. Phone E.164 validation (API + frontend). Session cookie unchanged (no new attack surface)." >}}
+{{< progressbar label="Automation & delivery" value="57" note="QA checklist: scripts/qa-checklist.sh with automated smoke tests + docs/QA_CHECKLIST.md (43 manual test items). docs/integrations/ with 5 setup guides." >}}
 
 ### Next milestone
 
-- Batch 04: AWS deploy (cloud automation)
-- Batch 05: Onboarding wizard expansion
-- Batch 13: Registration + onboarding flow completion
+- Batch 04: AWS deploy (last remaining batch)
