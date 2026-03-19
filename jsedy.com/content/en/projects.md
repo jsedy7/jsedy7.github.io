@@ -4,29 +4,27 @@ title: "Projects"
 
 ## XINEX progress
 
-_Last update: 2026-03-19 14:31 CET_
+_Last update: 2026-03-19 (sprint 23+24+13+21+32+37)_
 
-{{< progressbar label="Project readiness" value="99" note="v0.49.0-alpha — sprint 42+33+18+25+20+22 completed. Rate limiting (nginx + app layer), IP blocklist, probers management, dead probe detection, SEO meta tags + sitemap, account delete, API pagination + X-Request-ID. Migrations 025-027." >}}
+{{< progressbar label="Project readiness" value="99" note="v0.50.0-alpha — all batches 01–42 completed (except LATER/FAR FUTURE). Sprint: infra hardening (23), pytest CI (24), onboarding tips (13), accessibility (21), ping probe multi-thread (32), product web major redesign (37). Migration 028." >}}
 
-{{< progressbar label="User readiness" value="93" note="Account delete (Danger Zone + double confirmation). Probe stale warning in dashboard. Consistent error format with request_id. Pagination on monitor list API." >}}
-{{< progressbar label="Administration" value="95" note="Probers section: health status badges, 30s auto-refresh, deregister action. IP Blocklist section: CRUD + audit events. Probe heartbeat endpoint (POST /internal/probe-heartbeat)." >}}
-{{< progressbar label="Product web" value="84" note="OG/Twitter meta tags, sitemap.xml, robots.txt, placeholder OG image 1200x630." >}}
-{{< progressbar label="Security" value="93" note="nginx rate limit zones (auth 10r/m, api 60r/s, DDoS timeouts, limit_conn 20). IP blocklist middleware (in-memory cache 2min refresh). X-Request-ID on all responses. Consistent error format with request_id field." >}}
-{{< progressbar label="Automation & delivery" value="57" note="QA checklist, integration docs. pytest unit tests and CI pipeline planned in batch 24." >}}
+{{< progressbar label="User readiness" value="93" note="Welcome tips after first monitor. Ping monitor detail hides HTTP/SSL sections. Skip-link accessibility. Empty state for notification channels. Onboarding wizard, quick wizard, first-run hint." >}}
+{{< progressbar label="Administration" value="95" note="Integrations feature gate, site statistics, account suspension + impersonation. IP blocklist. Probers management. Audit log with filters + detail modal. CI security audit." >}}
+{{< progressbar label="Product web" value="95" note="Major redesign complete: How it works (3 steps), Diagnostic depth (6 feature cards), Trust bar. Hero, pricing, comparison table. Responsive CSS." >}}
+{{< progressbar label="Security" value="93" note="SSRF, ReDoS, headers. nginx + app rate limiting. IP blocklist middleware. CI pipeline with pip-audit. Per-email lockout. Account suspension." >}}
+{{< progressbar label="Automation & delivery" value="88" note="pytest unit tests (auth, monitors, incidents), GitHub Actions CI (lint+test+tsc+security), k6 load test, backup-db.sh with S3, Docker health checks, extended alert rules." >}}
 
 ---
 
 ### Next milestone
 
-**Sprint completed (42, 33, 18, 25, 20, 22):**
-- Batch 42 - Defensive mechanisms: nginx rate limiting, IP blocklist, DDoS protection
-- Batch 33 - Probers management in System Console (health, auto-refresh, deregister)
-- Batch 18 - Dead probe detection: heartbeat endpoint + stale warning in UI
-- Batch 25 - Account delete (self-service, soft-delete with confirmation)
-- Batch 20 - Marketing SEO: OG tags, sitemap, robots.txt
-- Batch 22 - API quality: X-Request-ID, consistent errors, pagination
+**Sprint completed (23, 24, 13, 21, 32, 37):**
+- Batch 23 - Infra hardening: DB pool 5/20, /health DB ping, data retention + cleanup loop, Docker health checks, backup-db.sh, nginx gzip, extended alert rules
+- Batch 24 - Testing: pytest unit tests, GitHub Actions CI pipeline, k6 load test
+- Batch 13 - Onboarding: welcome tips after first monitor (auto-dismiss, 10s)
+- Batch 21 - Accessibility: skip-link, focus CSS, empty state for notification channels
+- Batch 32 - Ping probe: ThreadPoolExecutor (PROBE_MAX_WORKERS=20), ping monitor detail UI
+- Batch 37 - Product web: How it works + Diagnostic depth + Trust bar sections
 
-**Queued:**
-- Batch 32 - Ping probe architecture (multi-type)
-- Batch 37 - Product web major redesign
-- Batch 41 - Admin: roles granularity / platform moderator
+**Remaining for beta/AWS launch:**
+- Batch 04 - AWS first deployment (manual steps: IAM, SES, terraform apply, DNS, TLS)

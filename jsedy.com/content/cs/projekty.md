@@ -4,27 +4,27 @@ title: "Projekty"
 
 ## Progress XINEX projektu
 
-_Poslední aktualizace: 2026-03-19 14:20 CET_
+_Poslední aktualizace: 2026-03-19 (sprint 23+24+13+21+32+37)_
 
-{{< progressbar label="Připravenost projektu" value="97" note="v0.47.0-alpha – batche 01–36, 40 z 42 dokonceny. Sprint: integrace feature gate (34), site statistics (40), account suspenze + impersonace (31). Migrace 022–024." >}}
+{{< progressbar label="Připravenost projektu" value="99" note="v0.50.0-alpha – všechny batche 01–42 dokonceny (krome LATER/FAR FUTURE). Sprint: infra hardening (23), pytest CI (24), onboarding tipy (13), accessibility (21), ping probe multi-thread (32), product web redesign (37). Migrace 028." >}}
 
-{{< progressbar label="Uživatelská připravenost" value="90" note="Email + Telegram alerty, onboarding wizard, first-run hint. Login page redesign. Heartbeats progress bar. Quick wizard zjednodušen. Impersonation banner." >}}
-{{< progressbar label="Administrace" value="90" note="Integrations feature gate: zapnout/vypnout per-integraci (SQL registry + admin UI). Site statistics: KPI karty, check volume, monitor type breakdown. Account suspenze + impersonace (auditovane)." >}}
-{{< progressbar label="Produktový web" value="78" note="Hero, highlights, quickstart docs, legal texty. Velky redesign planovany v batch 37." >}}
-{{< progressbar label="Security" value="84" note="SSRF, ReDoS, headers. Per-email lockout. Account suspension (403 na login i API). Impersonation: auditovany, bannered, max 3 sessions, cannot impersonate admin." >}}
-{{< progressbar label="Automatizace a nasazení" value="57" note="QA checklist, integration docs. pytest unit testy a CI pipeline planovane v batch 24." >}}
+{{< progressbar label="Uživatelská připravenost" value="93" note="Welcome tipy po prvnim monitoru. Ping monitor detail bez HTTP/SSL sekcí. Skip-link přístupnost. Prázdné stavy pro notifikace. Quick wizard, first-run hint, onboarding wizard." >}}
+{{< progressbar label="Administrace" value="95" note="Integrations feature gate, site statistics, account suspenze + impersonace. IP blocklist. Probers management. Audit log s filtry + detailem." >}}
+{{< progressbar label="Produktový web" value="95" note="Velký redesign dokoncen: sekce Jak to funguje (3 kroky), Diagnostic depth (6 karet), Trust bar. Hero, highlights, pricing, comparison. Responsive CSS." >}}
+{{< progressbar label="Security" value="93" note="SSRF, ReDoS, headers. Rate limiting (nginx + app). IP blocklist middleware. Per-email lockout. Account suspension. CI security audit (pip-audit)." >}}
+{{< progressbar label="Automatizace a nasazení" value="88" note="pytest unit testy (auth, monitors, incidents), CI pipeline (lint+test+tsc+pip-audit), k6 load test, backup-db.sh, Docker health checks, alert rules rozšíreny." >}}
 
 ---
 
 ### Nejbližší milestone
 
-**Sprint dokoncen (34, 40, 31):**
-- Batch 34 – Integrace feature gate (zapnout/vypnout per-integraci z System Console)
-- Batch 40 – Site Statistics (KPI karty, checks volume, monitor distribution)
-- Batch 31 – Sprava uctu: suspenze + impersonace (auditovana, banner v UI)
+**Sprint dokoncen (23, 24, 13, 21, 32, 37):**
+- Batch 23 – Infra hardening: DB pool, /health DB ping, data retention, Docker health checks, backup-db.sh, nginx gzip, alert rules
+- Batch 24 – Testing: pytest unit testy, CI pipeline (GitHub Actions), k6 load test
+- Batch 13 – Onboarding: welcome tipy po prvnim monitoru (auto-dismiss)
+- Batch 21 – Accessibility: skip-link, focus CSS, empty states pro notifikace
+- Batch 32 – Ping probe: ThreadPoolExecutor, ping monitor detail UI
+- Batch 37 – Product web: sekce Jak to funguje + Diagnostic depth + Trust bar
 
-**Dalsi v pori:**
-- Batch 33 – Probers management sekce v System Console
-- Batch 32 – Ping probe architektura (multi-type, heartbeat)
-- Batch 37 – Product web velky redesign
-- Batch 42 – Defensive mechanisms (IP blocklist, abuse detection)
+**Zbývá pro beta launch:**
+- Batch 04 – AWS první nasazení (manuální kroky: IAM, SES, terraform apply, DNS, TLS)
