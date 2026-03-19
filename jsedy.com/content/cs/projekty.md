@@ -4,7 +4,7 @@ title: "Projekty"
 
 ## Progress XINEX projektu
 
-_Poslední aktualizace: 2026-03-19 18:30 CET_
+_Poslední aktualizace: 2026-03-19 19:15 CET_
 
 {{< progressbar label="Připravenost projektu" value="93" note="v0.47.0-alpha – batche 01–17 dokončeny. Analýza platformy z 9 rolí přinesla 22 nových tasků (batche 18–39)." >}}
 
@@ -43,11 +43,15 @@ _Poslední aktualizace: 2026-03-19 18:30 CET_
 | 38 | Docs – uživatelská dokumentace | 2–3 dny |
 | 39 | Mobile app | týdny |
 
-**Celkový odhad (bez 38 a 39):** ~40–55 pracovních dní
+| 40 | Site Statistics (KPI, grafy) | 2–3 dny |
+| 41 | Permissions – moderátor role | 3–4 dny |
+| 42 | Defensive – rate limit mgmt, IP blocklist, API token revoke | 4–6 dní |
+
+**Celkový odhad (bez 38, 39, 41 LATER):** ~47–67 pracovních dní
 
 ### Nejbližší milestone
 
 - Opravy vizuálních regresí: **Batch 26** (sidebar) + **Batch 27** (dashboard status pulsing dot)
-- Bezpečnostní hardening: **Batch 19** (auth rate limiting, lockout)
+- Bezpečnostní hardening: **Batch 19** (auth rate limiting, lockout) + **Batch 42** (IP blocklist, abuse detection)
 - Infrastruktura: **Batch 18** (dead probe detection) + **Batch 23** (DB index, záloha)
 
