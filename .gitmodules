@@ -1,3 +1,6 @@
 [submodule "jsedy.com/themes/PaperMod"]
 	path = jsedy.com/themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "jsedy.com/knowledgebase"]
+	path = jsedy.com/knowledgebase
+	url = https://github.com/jsedy7/knowledgebase

@@ -8,6 +8,36 @@ defaultContentLanguageInSubdir: true
 
 enableRobotsTXT: true
 
+ignoreFiles:
+  - 'state\.json$'
+  - '\.html$'
+  - 'feature-template\.md$'
+  - '/sources/'
+
+module:
+  mounts:
+    - source: content/cs
+      target: content
+      lang: cs
+    - source: content/en
+      target: content
+      lang: en
+    - source: static
+      target: static
+    - source: layouts
+      target: layouts
+    - source: assets
+      target: assets
+    - source: i18n
+      target: i18n
+    - source: data
+      target: data
+    - source: archetypes
+      target: archetypes
+    - source: knowledgebase/projects/howlops/competitors-research
+      target: content/read
+      lang: en
+
 minify:
   disableXML: true
   minifyOutput: true
@@ -91,10 +121,6 @@ languages:
           identifier: fpv-cs
           pageRef: /fpv/
           weight: 2
-        - name: Projekty
-          identifier: projects-cs
-          pageRef: /projekty/
-          weight: 3
         - name: Ceník
           identifier: pricing-cs
           pageRef: /pricing/
@@ -140,10 +166,6 @@ languages:
           identifier: fpv-en
           pageRef: /fpv/
           weight: 2
-        - name: Projects
-          identifier: projects-en
-          pageRef: /projects/
-          weight: 3
         - name: Pricing
           identifier: pricing-en
           pageRef: /pricing/
