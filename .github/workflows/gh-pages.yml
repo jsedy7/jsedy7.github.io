@@ -22,14 +22,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Configure git credentials for private submodule
-        run: git config --global url."https://${{ secrets.SUBMODULE_PAT }}@github.com/".insteadOf "https://github.com/"
-
       - name: Checkout (with submodules)
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 1
+          token: ${{ secrets.SUBMODULE_PAT }}
 
       - name: Setup Go
         uses: actions/setup-go@v5
