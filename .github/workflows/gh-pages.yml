@@ -29,6 +29,9 @@ jobs:
           fetch-depth: 1
           token: ${{ secrets.SUBMODULE_PAT }}
 
+      - name: Update knowledgebase submodule to latest
+        run: git submodule update --remote jsedy.com/knowledgebase
+
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
