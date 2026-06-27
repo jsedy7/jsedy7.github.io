@@ -32,6 +32,10 @@ jobs:
       - name: Update knowledgebase submodule to latest
         run: git submodule update --remote jsedy.com/knowledgebase
 
+      - name: Sync /read/ section index files
+        working-directory: jsedy.com
+        run: bash scripts/sync-read-sections.sh
+
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
